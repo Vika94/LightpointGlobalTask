@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static org.openqa.selenium.By.xpath;
 
 public enum ElectronicsMenu {
-    MOBILEPHONES($(xpath("//div[contains(text(),'телефоны')]")));//div[contains(@class, 'aside_active')]//div[contains(@class, 'item_active')]
+    MOBILEPHONES($(xpath("//div[contains(@Class, 'catalog-navigation-list_opened')]//div[contains(@Class, 'title')][1]")));
 
     protected SelenideElement element;
 

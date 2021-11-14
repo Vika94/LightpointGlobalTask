@@ -12,10 +12,10 @@ public class Tests extends BaseTest {
     @Test
     public void checkingIPhoneByPrice() {
         get(HomePage.class).clickCatalogBtn()
-                .clickMenu(MenuProducts.ELECTRONICS)
-                .clickMenu(ElectronicsMenu.MOBILEPHONES)
-                .clickMenu(MobilePhoneMenu.SMARTPHONES);
+                .selectItemMenu(MenuProducts.ELECTRONICS)
+                .selectItemMenuElectronics(ElectronicsMenu.MOBILEPHONES)
+                .selectItemMenuMobilePhone(MobilePhoneMenu.SMARTPHONES);
         get(FilterProducts.class).clickAppleBtn();
-        get(ProductsPage.class).verifyProductPrice();
+        get(ProductsPage.class).verifyFirstProductPrice();
     }
 }
