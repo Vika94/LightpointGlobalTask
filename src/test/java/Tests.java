@@ -18,4 +18,9 @@ public class Tests extends BaseTest {
         get(FilterProducts.class).clickAppleBtn();
         get(ProductsPage.class).verifyFirstProductPrice();
     }
+
+    @Test
+    public void checkTestGit(){
+
+    }
 }
